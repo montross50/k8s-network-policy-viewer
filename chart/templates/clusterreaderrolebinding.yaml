@@ -14,7 +14,6 @@ roleRef:
   name: system:aggregate-to-view
 subjects:
 -
-  apiGroup: rbac.authorization.k8s.io
   kind: ServiceAccount
   name: {{ .Values.name | quote }}
   namespace: {{ .Values.namespace | quote }}
