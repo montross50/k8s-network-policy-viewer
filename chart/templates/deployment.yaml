@@ -17,7 +17,6 @@ spec:
       labels:
         app: {{ .Values.name | quote }}
     spec:
-      serviceAccountname: {{ .Values.name | quote }}
       serviceAccount: {{ .Values.name | quote }}
       containers:
       - name: {{ .Values.name | quote }}
