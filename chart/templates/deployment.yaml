@@ -6,8 +6,6 @@ metadata:
   labels:
     app: {{ .Values.name | quote }}
 spec:
-  triggers:
-  - type: ConfigChange
   replicas: 1
   selector:
     matchLabels:
