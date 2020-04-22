@@ -18,5 +18,3 @@ subjects:
   kind: ServiceAccount
   name: {{ .Values.name | quote }}
   namespace: {{ .Values.namespace | quote }}
-userNames:
-- {{ template "userNames" . }}
